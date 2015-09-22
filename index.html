@@ -6,10 +6,29 @@
   </head>
   <body>
 
+    <section id="loadingScreen">
+      <div></div>
+      <h1>Loading...</h1>
+    </section>
 
-  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
-  <script type="text/javascript" src="/node_modules/backbone/backbone-min.js"></script>
-  <script type="text/javascript" src="/scripts/main.js"></script>
+    <section id="menuScreen">
+      <a href="#play" class="button">Play</a>
+      <a href="#leaderboard" class="button">Leaderboard</a>
+      <a href="#settings" class="button">Settings</a>
+    </section>
+
+    <section id="playScreen">
+      <h1>Game On!</h1>
+      <div><embed width="640" height="480" base="http://external.kongregate-games.com/gamez/0017/5738/live/" src="http://external.kongregate-games.com/gamez/0017/5738/live/embeddable_175738.swf" type="application/x-shockwave-flash"></div>
+    </section>
+    <section id="leaderboardScreen"><h1>Leaderboard Section</section>
+    <section id="settingsScreen"><h1>Settings Section</section>
+
+
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="/node_modules/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="/scripts/loadie.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
   </body>
 </html>
